@@ -1,0 +1,10 @@
+runtime: python37
+handlers:
+- url: /
+  static_files: dist/hellowworld/index.html
+  upload: dist/hellowworld/index.html
+  expiration: "5m"
+- url: /
+  static_dir: dist/hellowworld
+  expiration: "5m"
+default_expiration: "10m"
