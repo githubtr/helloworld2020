@@ -13,6 +13,6 @@ export class AppComponent {
 
   constructor() {
     this.name = 'World - Angular 10.1.2 is really fun!';
-    this.title = 'HelloWorld';
+    this.title = 'hellowworld';
   }
 }
