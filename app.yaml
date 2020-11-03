@@ -6,5 +6,5 @@ handlers:
   expiration: "5m"
 - url: /
   static_dir: dist/hellowworld
-  expiration: "4m"
+  expiration: "5m"
 default_expiration: "10m"
