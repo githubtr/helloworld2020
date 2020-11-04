@@ -5,8 +5,8 @@ steps:
     args: [ 'install' ]
 
   # Run jest tests
-  - name: "gcr.io/cloud-builders/npm"
-    args: ["run", "test"]
+  #- name: "gcr.io/cloud-builders/npm"
+  #  args: ["run", "test"]
 
   # Build productive files
   - name: 'gcr.io/cloud-builders/npm'
