@@ -27,17 +27,16 @@ app = Flask(__name__)
 @app.route('/hello')
 def hello():
     SENDGRID_API_KEY='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'
-	sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_API_KEY)
-	from_email = Email('githubtr@gmail.com')
-	to_email = To('terrance.raphael@gmail.com')
-	subject = 'Hello from Python'
-	content = Content("text/plain","Hello from Python Body")
-	mail = Mail(from_email, to_email, subject, content)
-	response = sg.client.mail.send.post(request_body=mail.get())
-
-	print('response status:',response.status_code) # 202 status means successful in sending a mail
-	print('response header:',response.headers) # gives some other info
-	"""Return a friendly HTTP greeting."""
+    sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_API_KEY)
+    from_email = Email('githubtr@gmail.com')
+    to_email = To('terrance.raphael@gmail.com')
+    subject = 'Hello from Python'
+    content = Content("text/plain","Hello from Python Body")
+    mail = Mail(from_email, to_email, subject, content)
+    response = sg.client.mail.send.post(request_body=mail.get())
+    print('response status:',response.status_code) # 202 status means successful in sending a mail
+    print('response header:',response.headers) # gives some other info
+    """Return a friendly HTTP greeting."""
     return 'Hello World!'
 
 
