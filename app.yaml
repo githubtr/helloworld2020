@@ -1,6 +1,8 @@
 runtime: python38
 entrypoint: gunicorn -b :$PORT main:app
 handlers:
+- url: /hello
+  script: auto
 - url: /
   static_files: dist/hellowworld/index.html
   upload: dist/hellowworld/index.html
