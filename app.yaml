@@ -1,1 +1,9 @@
 runtime: python38
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: dist/hellowworld/index.html
+  upload: dist/hellowworld/index.html
+- url: /
+  static_dir: dist/hellowworld
