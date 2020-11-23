@@ -1,9 +1,9 @@
 runtime: python38
 handlers:
+- url: /hello
+  script: auto  
 - url: /
   static_files: dist/hellowworld/index.html
   upload: dist/hellowworld/index.html
 - url: /
   static_dir: dist/hellowworld
-- url: /hello
-  script: auto  
