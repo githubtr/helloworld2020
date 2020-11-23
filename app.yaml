@@ -5,3 +5,5 @@ handlers:
   upload: dist/hellowworld/index.html
 - url: /
   static_dir: dist/hellowworld
+- api: /hello
+  script: auto  
